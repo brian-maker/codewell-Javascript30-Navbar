@@ -1,0 +1,153 @@
+@media screen and (min-width: 390px){
+    .rating{
+        display: flex;
+        gap: 1rem;
+    }
+    .sites{
+        display: inherit;
+        gap: 1rem;
+    }
+}
+@media screen and (min-width: 48rem){
+    .main{
+        max-width: 1200px;
+    }
+    .mobile,.heading{
+        display: none;
+    }
+    .desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        position: relative;
+    }
+    .menu-items{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+    }
+    h3{
+        color: #9F9C99;
+        font-weight: 700;
+    }
+    h3:hover{
+        cursor: pointer;
+    }
+    h3::before{
+        content: "";
+        position: absolute;  
+        width: 100%;
+        height: 2px;
+        background: rgb(186, 171, 171);
+        top: -0.5rem;
+        display: none;
+        transition: ease-in 0.3s;
+    }
+   
+    .list-wrapper::after{
+        content: "";
+        position: absolute;
+        top: -8%;
+        left: 20%;
+        margin-left: -5px;
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent #fff  transparent;
+    }
+    .list-wrapper{
+        display: none;
+        background: #fff;
+        width: 100%;
+        max-width:400px;
+        min-width: 400px;
+        padding: 1rem;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 1;
+        top: 3rem;
+        left: -3rem !important;
+    }
+    .dropdown{
+        display: inline-block;
+        position: relative;
+    }
+    
+    .dropdown:hover .list-wrapper{
+        display: block;
+    }
+ 
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    button{
+        border: 0;
+        outline: 0;
+        color: #7F8E9A;
+    }
+    .sign-up button{
+        color: #9b968f;
+        font-weight: 700;
+    }
+    .sign-up button:hover{
+        cursor: pointer;
+        color: #133416;
+    }
+    .try button{
+        background: #133416;
+        padding: 0.8rem;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 3px;
+    }
+    .try button:hover{
+        cursor: pointer;
+        background: #7F8E9A;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        gap: 2rem;
+    }
+    .left{
+        margin-top: 5rem;
+    }
+    .left h1{
+        padding-right: 5rem;
+    }
+    .right{
+        display: block;
+    }
+    .right img{
+        width: 300px;
+    }
+    .companies{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    .companies img:hover{
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width: 62rem){
+    .list-wrapper{
+        left: 17rem;
+    }
+    .left h1{
+        padding-right: 10rem;
+    }
+    .right img{
+        width: 400px;
+    }
+    .left{
+        margin-top: 10rem;
+    }
+}
+

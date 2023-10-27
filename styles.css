@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hidden{
+    display: none;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background:rgb(244, 238, 231) ;
+}
+.main{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; */
+    padding: 1rem 2rem;
+}
+.mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.desktop{
+    display: none;
+}
+.menu-container{
+    background: #fff; 
+    position: absolute;
+    top: 3rem;
+    left: 1.4rem;
+    max-width: 700px;
+    z-index: 1;
+    width: 90%;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top p{
+    color: #7F8E9A;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.list-wrapper{
+    padding-top: 1rem;
+}
+.box{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 0 ;
+  
+}
+.title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0A263F;
+    padding-bottom:0.5rem ;
+}
+.para{
+    font-size: 1rem;
+    font-weight: 300; 
+    color: #7F8E9A;
+}
+.hero{
+    margin-top: 2rem;
+    padding: 0 1rem ;
+}
+.left h1{
+    color: #000;
+    font-size: 2rem;
+    line-height: 1.3;
+    padding-bottom: 1rem;
+}
+.left h1 span{
+    color: #F7B300;
+}
+.left p{
+    color:#6C6C6C ;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.try button{
+    margin: 1.5rem 0;
+    background: #133416;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+    border: 0;
+}
+.rating{
+    display: flex;
+    color:#6C6C6C ;
+}
+
+.right{
+    display: none;
+}
+.partners{
+    margin-top:4rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.partners p{
+    color:#6C6C6C ;
+    font-size: 13px;
+
+}
+.companies{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    margin-top: 2rem;
+}
+.companies img{
+    width: 90%;
+}
